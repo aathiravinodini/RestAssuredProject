@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Rest API Test Suite]" parallel="tests">
+  <test name="Rest API regression Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.api.gorest.tests.GetUserTest">
+        <methods>
+          <include name="getUserWithQueryParamsAPITest"/>
+        </methods>
+      </class> <!-- com.qa.api.gorest.tests.GetUserTest -->
+      <class name="com.qa.api.gorest.tests.GetImgurAPItest">
+        <methods>
+          <include name="setUp"/>
+          <include name="uploadImagePostAPITest"/>
+        </methods>
+      </class> <!-- com.qa.api.gorest.tests.GetImgurAPItest -->
+    </classes>
+  </test> <!-- Rest API regression Test(failed) -->
+</suite> <!-- Failed suite [Rest API Test Suite] -->
